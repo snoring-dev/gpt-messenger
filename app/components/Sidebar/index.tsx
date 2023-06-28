@@ -8,7 +8,7 @@ function Sidebar() {
       <div className="h-[60%] w-full pt-[40px]">
         <ConversationsList />
       </div>
-      <div className="relative h-[40%] w-full">
+      <div className="h-[40%] w-full">
         <UserMenu />
       </div>
     </div>

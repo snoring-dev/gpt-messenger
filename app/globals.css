@@ -25,3 +25,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+@layer components {
+  .conversation-item {
+    @apply text-dark-green  text-base  py-[8px] transition-all cursor-pointer hover:bg-bluish-green hover:text-white px-[16px] whitespace-nowrap overflow-ellipsis overflow-hidden rounded-md my-[8px] text-left;
+  }
+  .user-menu {
+    @apply flex flex-col gap-2 px-10 pb-[40px] justify-end h-full text-black;
+  }
+  .user-menu-item {
+    @apply flex flex-row items-center justify-start cursor-pointer hover:bg-white/20 rounded-xl px-4 py-4 transition-all duration-300;
+  }
+  .chat-btn {
+    @apply bg-bluish-green p-[20px] mt-[40px] flex flex-row items-center justify-start rounded-lg cursor-pointer hover:bg-bluish-green/80 transition;
+  }
+}
